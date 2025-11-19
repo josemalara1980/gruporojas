@@ -1,0 +1,154 @@
+/* ===========================
+   ESTILO GENERAL GRUPO ROJAS
+=========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* ===========================
+   CABECERA
+=========================== */
+
+.cabecera-gr {
+    text-align: center;
+    background: #ffffff;
+    padding: 25px 0;
+    border-bottom: 2px solid gray;
+    position: relative;
+}
+
+.logo-gr {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 70px;
+    border: 4px groove gray;
+}
+
+.cabecera-gr h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* ===========================
+   CATÁLOGO
+=========================== */
+
+.catalogo {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.producto {
+    background: #ffffff;
+    border: 2px outset gray;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid gray;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 12px 0 5px;
+}
+
+.producto p {
+    margin: 0 15px;
+    color: #444;
+    font-size: 14px;
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px outset gray;
+}
+
+.btn:hover {
+    background: #000;
+}
+/* ============= MENÚ PRINCIPAL ============= */
+
+.main-nav {
+    background: #ffffff;
+    border: 2px solid gray;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 2px outset gray;
+    display: block;
+}
+
+/* ============= SUBMENÚ ============= */
+
+.submenu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 2px solid gray;
+    min-width: 200px;
+    z-index: 9999;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.dropdown li a:hover {
+    background: #ddd;
+}
